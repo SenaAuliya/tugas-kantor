@@ -1,0 +1,33 @@
+body,html *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 100vh;
+}
+header{
+    border-bottom: 1px black solid;
+    height: 60px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-bottom: 2px;
+}
+li {
+    list-style: none;
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
+a{
+    color: black;
+}
+main{
+    text-align: center;
+}
+h1{
+    font-size: xx-large;
+}

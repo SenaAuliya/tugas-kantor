@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexcent</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #28CB8B;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 105px;
+            width: 100%;
+            height: 84px;
+            box-sizing: border-box;
+        }
+        header div img {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+        header nav ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            list-style: none;
+            margin-right: 50px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #18191F;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            line-height: 24px;
+            font-size: 16px;
+        }
+        header div:nth-child(3) {
+            display: flex;
+            align-items: center;
+        }
+        header div:nth-child(3) a {
+            margin-right: 14px;
+        }
+        header div:nth-child(3) button {
+            width: 91px;
+            height: 40px;
+            background-color: #28CB8B;
+            color: white;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+        header div:nth-child(3) button a {
+            text-decoration: none;
+            color: white;
+        }
+        /* Hero Section */
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+        main > div:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        main div div {
+            width: 657px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        main div div h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 76px;
+            color: #4d4d4d;
+        }
+        main div div h1 span {
+            color: #28CB8B;
+        }
+        main div div p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 16px;
+            color: #4d4d4d;
+        }
+        main div div a {
+            display: inline-block;
+            width: 128px;
+            height: 52px;
+            border-radius: 4px;
+            padding: 14px 32px;
+            background-color: #28CB8B;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            margin-top: 16px;
+        }
+        main div img {
+            margin-left: 32px;
+        }
+        /* Clients Section */
+        main > div:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        main > div:nth-of-type(2) p {
+            color: #4d4d4d;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+            margin-bottom: 16px; /* Optional margin bottom */
+        }
+        main > div:nth-of-type(2) p:nth-child(2) {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #717171;
+        }
+        main > div:nth-of-type(2) div{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        main > div:nth-of-type(2) div img{
+            height: 40px;
+            width: 40px
+        }
+        /* Comunity section */
+        main > div:nth-of-type(3) {
+            margin-top: 40px;
+            flex-direction: column;
+        }
+        main > div:nth-of-type(3) div{
+            width: 460px;
+        }
+        main > div:nth-of-type(3) div p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            color: #4d4d4d;
+        }
+        main > div:nth-of-type(3) div > p:nth-of-type(2){
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #717171;
+        }
+        main > div:nth-of-type(3) div:nth-of-type(2){
+            flex-direction: row;
+            justify-content: center;
+        }
+        main > div:nth-of-type(3) div:nth-of-type(2) div{
+            flex-direction: column;
+            margin:0 50px
+        }
+        main > div:nth-of-type(3) div:nth-of-type(2) div img{
+            width: 65px;
+            height: 56px;
+        }
+        main > div:nth-of-type(3) div:nth-of-type(2) div p{
+            width: 209px;
+        }
+        /* the unseen section */
+        main > div:nth-of-type(4){
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        main > div:nth-of-type(4) div:nth-of-type(2) h2{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-style: 36px;
+line-height: 44px;
+color: #4d4d4d;
+        }
+        main > div:nth-of-type(4) div:nth-of-type(2) p{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /* helping section */
+        main > div:nth-of-type(5){
+            display: flex;
+            flex-direction: row;
+        }
+        main > div:nth-of-type(5) div h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            color: #4d4d4d;
+        }
+        main > div:nth-of-type(5) div h2 span{
+            color: #28CB8B;
+        }
+        main > div:nth-of-type(5) div p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        main > div:nth-of-type(5) div {
+            display: flex;
+            flex-direction: col;
+        }
+        main > div:nth-of-type(5) div div {
+            display: flex;
+            flex-direction: row;
+        }
+        main > div:nth-of-type(5) div div div {
+            display: flex;
+            flex-direction: row;
+            width: 255px;
+        }
+        main > div:nth-of-type(5) div div div div:nth-child(2) p{
+            width: 111px;
+        }
+        main > div:nth-of-type(5) div div div div:nth-child(2) p span{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        /* helping section */
+        main > div:nth-of-type(6) {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+        main > div:nth-of-type(6) div h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            color: #4d4d4d;
+        }
+        main > div:nth-of-type(6) div p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="assets/1Logo.png" height="24px" width="154px" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Feature</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">Faq</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="">Login</a>
+            <button><a href="">Sign Up</a></button>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <div>
+            <div>
+                <h1>Lessons and insights <span>from 8 years</span></h1>
+                <p>Where to grow your business as a photographer: site or social media?</p>
+                <a href="">Register</a>
+            </div>
+            <div>
+                <img src="assets/Illustration.png" height="407px" width="391px" alt="Illustration">
+            </div>
+        </div>
+        <!-- Hero Section -->
+        <!-- Clients Section -->
+        <div>
+            <p>Our Clients</p>
+            <p>We have been working with some Fortune 500+ clients</p>
+            <div>
+                <img src="assets/Logo.png" alt="">
+                <img src="assets/Logo (1).png" alt="">
+                <img src="assets/Logo (2).png" alt="">
+                <img src="assets/Logo (3).png" alt="">
+                <img src="assets/Logo (4).png" alt="">
+                <img src="assets/Logo (5).png" alt="">
+                <img src="assets/Logo (6).png" alt="">
+            </div>
+        </div>
+        <!-- Clients Section -->
+         <!-- Comunity Section -->
+<div>
+    <div>
+        <p>Manage your community in a single system</p>
+        <p>Who is Nextcent suitable for?
+        </p>
+    </div>
+    <div>
+<div>
+    <img src="assets/1Icon.png" alt="">
+    <p>Membership Organisations</p>
+    <p>Our membership management software provides full automation of membership renewals and payments</p>
+</div>
+<div>
+    <img src="assets/Icon (1).png" alt="">
+    <p>National Associations</p>
+    <p>Our membership management software provides full automation of membership renewals and payments</p>
+</div>
+<div>
+    <img src="assets/Icon (2).png" alt="">
+    <p>Clubs And Groups</p>
+    <p>Our membership management software provides full automation of membership renewals and payments</p>
+</div>
+    </div>
+</div>
+         <!-- Comunity Section -->
+          <!-- The unseen section -->
+<div>
+<div>
+    <img src="assets/Frame 35.png" height="433px" width="442px" alt="">
+</div>
+<div>
+    <h2>The unseen of spending three years at Pixelgrade</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+</div>
+</div>
+        <!-- The unseen section -->
+<!-- helping section -->
+<div>
+    <div>
+        <h2>Helping a local <span>business reinvent itself</span></h2>
+        <p>We reached here with our hard work and dedication</p>
+    </div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <img src="assets/2Icon.png" width="48px" height="48px" alt="">
+                </div>
+                <div>
+                    <p><span>2,245,341</span> member</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/Icon 1.png" width="48px" height="48px" alt="">
+                </div>
+                <div>
+                    <p><span>2,245,341</span> Clubs</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img src="assets/Icon 2.png" width="48px" height="48px" alt="">
+                </div>
+                <div>
+                    <p><span>2,245,341</span> Event Bokings</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/Icon 3.png" width="48px" height="48px" alt="">
+                </div>
+                <div>
+                    <p><span>2,245,341</span> Payments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- heping section -->
+ <div>
+        <div>
+            <img src="assets/pana.png" width="441px" height="433px" alt="">
+        </div>
+        <div>
+            <h2>How to design your site footer like we did</h2>
+            <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+        </div>
+ </div>
+    </main>
+</body>
+</html>
