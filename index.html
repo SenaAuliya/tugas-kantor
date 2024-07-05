@@ -512,6 +512,10 @@ color: #4d4d4d;
             line-height: 20px;
             color: #F5F7FA;
         }
+        footer > div:nth-of-type(4) div{
+            width: auto;
+            position: relative;
+        }
         footer > div:nth-of-type(4) h4{
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             font-weight: 600;
@@ -520,6 +524,7 @@ color: #4d4d4d;
             color: #ffffff;
         }
         footer > div:nth-of-type(4) input{
+            border: none;
             width: 255px;
             height: 40px;
             color: #ffffff;
@@ -536,7 +541,10 @@ color: #4d4d4d;
             line-height: 20px;
         }
         footer > div:nth-of-type(4) button{
-            height: 40px;
+            position: absolute;
+            right: 20px;
+            height: 45px;
+            border: none;
             padding: 0 20px;
             background-color: #515B60;
         }
@@ -798,8 +806,10 @@ color: #4d4d4d;
             </div>
             <div>
                 <h4>Stay Up  to date</h4>
-                <input type="text" placeholder="Your Email Addres">
+                <div>
+                    <input type="text" placeholder="Your Email Addres">
                 <button><img src="assets/send.png" width="18px" height="18px" alt=""></button>
+                </div>
             </div>
         </footer>
     <!-- Footer -->
