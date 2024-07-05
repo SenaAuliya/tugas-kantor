@@ -114,7 +114,9 @@
             color: #4d4d4d;
         }
         main div div a {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 128px;
             height: 52px;
             border-radius: 4px;
@@ -142,7 +144,7 @@
             font-size: 32px;
             line-height: 44px;
             text-align: center;
-            margin-bottom: 16px; /* Optional margin bottom */
+            margin-bottom: 16px;
         }
         main > div:nth-of-type(2) p:nth-child(2) {
             font-family: Arial, Helvetica, sans-serif;
@@ -205,8 +207,10 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            text-align: left;
         }
         main > div:nth-of-type(4) div:nth-of-type(2) h2{
+            text-align: left;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: 600;
 font-style: 36px;
@@ -214,6 +218,7 @@ line-height: 44px;
 color: #4d4d4d;
         }
         main > div:nth-of-type(4) div:nth-of-type(2) p{
+            text-align: left;
             font-size: 14px;
             line-height: 20px;
         }
@@ -267,6 +272,11 @@ color: #4d4d4d;
             margin-top: 20px;
             padding-top: 10px;
         }
+        main > div:nth-of-type(6) div:nth-child(2){
+            display: flex;
+            align-items: start;
+            text-align: left;
+        }
         main > div:nth-of-type(6) div h2{
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 600;
@@ -279,6 +289,256 @@ color: #4d4d4d;
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
+        }
+        main > div:nth-of-type(6) div a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4CAF4F;
+            padding: 14px 32px 14px 32px;
+            border-radius: 4px;
+        }
+        /* tesla section */
+        main > div:nth-of-type(7){
+            display: flex;
+            flex-direction: row;
+            margin-top: 48px;
+            margin-bottom: 24px;
+        }
+        main > div:nth-of-type(7) div:nth-child(2){
+            text-align: left;
+        }
+        main > div:nth-of-type(7) div:nth-child(2) p:nth-child(1){
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #717171;
+        }
+        main > div:nth-of-type(7) div:nth-child(2) h4{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #4CAF4F;
+        }
+        main > div:nth-of-type(7) div:nth-child(2) p:nth-child(2){
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #89939E;
+        }
+        main > div:nth-of-type(7) div:nth-child(2) div{
+            width: 784px;
+            display: flex;
+            flex-direction: row;
+        }
+        main > div:nth-of-type(7) div:nth-child(2) div div:nth-child(2){
+            display: flex;
+            flex-direction: row;
+            width: 223px;
+        }
+        /* Carring section */
+        main > div:nth-of-type(8){
+            height: 506px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        main > div:nth-of-type(8) div:nth-child(1){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        main > div:nth-of-type(8) div:nth-child(1) h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            color: #4d4d4d;
+        }
+        main > div:nth-of-type(8) div:nth-child(1) p{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #717171;
+        }
+        main > div:nth-of-type(8) div:nth-child(2){
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        main > div:nth-child(8) div:nth-child(2) div{
+            display: flex;
+            flex-direction: column;
+            margin:24px 24px 0 24px;
+        }
+        main > div:nth-of-type(8) div:nth-child(2) div img{
+            object-fit: fill;
+            border-radius: 8px;
+            position: absolute;
+        }
+        main > div:nth-of-type(8) div:nth-child(2) div div{
+            position: relative;
+            left: 16px;
+            right: 16px;
+            top: 180px;
+            width: 317px;
+            height: 176px;
+            border-radius: 8px;
+            gap: 16px;
+            padding: 16px;
+            background-color: #F5F7FA;
+        }
+        main > div:nth-of-type(8) div:nth-child(2) div div h4{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            color: #717171;
+        }
+        main > div:nth-of-type(8) div:nth-child(2) div div span{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        main > div:nth-of-type(8) div:nth-child(2) div div span h4{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            color: #4CAF4F;
+        }
+        /* Pellentesque suscipit fringilla libero eu. section */
+        main > div:nth-of-type(9){
+            display: flex;
+            background-color: #F5F7FA;
+            height: 628px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 94px;
+        }
+        main > div:nth-of-type(9) h1{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin-top: 100px;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 76px;
+        text-align: center;
+        color: #263238;
+        }
+        main > div:nth-of-type(9) a{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 178px;
+            height: 52px;
+            border-radius: 4px;
+            padding: 14px 32px 14px 32px;
+            gap: 8px;
+            background-color: #4CAF4F;
+            color:#F5F7FA
+        }
+        /* Footer section */
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 328px;
+            padding: 64px 165px 64px 164px;
+            gap: 125px;
+            background-color: #263238;
+        }
+        footer > div:nth-of-type(1) div p{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #F5F7FA;
+        } 
+        footer > div:nth-of-type(1) div p:nth-child(1){
+            margin-top: 40px;
+        }
+        footer > div:nth-of-type(1) div div {
+            margin-top: 40px;
+        }
+        footer > div:nth-of-type(1) div div img{
+            height: 32px;
+            width: 32px;
+            margin: 0 5px;
+        }
+        footer > div:nth-of-type(2) h4{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #ffffff;
+        }
+        footer > div:nth-of-type(2) p{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #F5F7FA;
+        }
+        footer > div:nth-of-type(3) h4{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #ffffff;
+        }
+        footer > div:nth-of-type(3) p{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #F5F7FA;
+        }
+        footer > div:nth-of-type(4) h4{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #ffffff;
+        }
+        footer > div:nth-of-type(4) input{
+            width: 255px;
+            height: 40px;
+            color: #ffffff;
+            top: 52px;
+            background-color: #515B60;
+            border-radius: 8px;
+            padding: 3px 5px;
+        }
+        footer > div:nth-of-type(4) input[type="text"]::placeholder{
+            color: #D9DBE1;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        footer > div:nth-of-type(4) button{
+            height: 40px;
+            padding: 0 20px;
+            background-color: #515B60;
         }
     </style>
 </head>
@@ -413,15 +673,135 @@ color: #4d4d4d;
     </div>
 </div>
 <!-- heping section -->
+ <!-- how to design secction -->
  <div>
+    <div>
+        <img src="assets/pana.png" width="441px" height="433px" alt="">
+    </div>
+    <div>
+        <h2>How to design your site footer like we did</h2>
+        <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+        <a href="">Learn More</a>
+    </div>
+</div>
+ <!-- how to design secction -->
+  <!-- tesla section -->
+  <div>
+    <div>
+        <img src="assets/image 9.png" alt="" width="326px" height="326px">
+    </div>
+    <div>
+        <p>Maecenas dignissim justo Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+        <h4>Tin Smith</h4>
+        <p>British Dragon Boat Racing Association</p>
         <div>
-            <img src="assets/pana.png" width="441px" height="433px" alt="">
+            <div>
+            <img src="assets/Logo.png" height="48px" width="48px" alt="">
+            <img src="assets/Logo (1).png" height="48px" width="48px" alt="">
+            <img src="assets/Logo (2).png" height="48px" width="48px" alt="">
+            <img src="assets/Logo (3).png" height="48px" width="48px" alt="">
+            <img src="assets/Logo (4).png" height="48px" width="48px" alt="">
+            <img src="assets/Logo (5).png" height="48px" width="48px" alt="">
+            <img src="assets/Logo (6).png" height="48px" width="48px" alt="">
+            </div>
+            <div>
+                <h4>Meet all customers</h4>
+                <img src="assets/Right.png" width="24px" height="24px" alt="">
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- tesla section -->
+  <!-- Caring Section-->
+<div>
+    <div>
+        <h2>Caring is the new marketing</h2>
+        <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+    </div>
+    <div>
+        <div>
+            <img src="assets/image 18.png" width="368"
+            height= "286px" alt="">
+            <div>
+                <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
+                <span>
+                    <h4>Readmore</h4>
+                    <img src="assets/Right.png" height="24px" width="" alt="">
+                </span>
+            </div>
         </div>
         <div>
-            <h2>How to design your site footer like we did</h2>
-            <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+            <img src="assets/image 19.png" width="368"
+            height= "286px" alt="">
+            <div>
+                <h4>What are your safeguarding responsibilities and how can you manage them?</h4>
+                <span>
+                    <h4>Readmore</h4>
+                    <img src="assets/Right.png" height="24px" width="" alt="">
+                </span>
+            </div>
         </div>
- </div>
+        <div>
+            <img src="assets/image 20.png" width="368"
+            height= "286px" alt="">
+            <div>
+                <h4>Revamping the Membership Model with Triathlon Australia</h4>
+                <span>
+                    <h4>Readmore</h4>
+                    <img src="assets/Right.png" height="24px" width="" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Caring Section -->
+   <!-- Pellentesque suscipit fringilla libero eu. section -->
+    <div>
+        <h1>Pellentesque suscipit fringilla libero eu.</h1>
+            <a href="">Get Demo <img src="assets/Down.png" height="30px" width="30px" alt=""></a>
+            
+    </div>
+   <!-- Pellentesque suscipit fringilla libero eu. section -->
     </main>
+    <!-- Footer -->
+        <footer>
+            <div>
+                <img src="assets/Logo7.png" width="191px" height="30px" alt="">
+                <div>
+                    <p>Copyright © 2020 Nexcent ltd.</p>
+                    <p>All rights reserved</p>
+                    <div>
+                        <img src="assets/Social Icons.png" alt="">
+                        <img src="assets/Social Icons3.png" alt="">
+                        <img src="assets/iconsosial.png" alt="">
+                        <img src="assets/iconsosial2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Contact Us</p>
+                <p>Pricing</p>
+                <p>Testimonial</p>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <p>
+                    Help center
+                </p>
+                <p>Terms of service</p>
+                <p>Legal</p>
+                <p>Privacy policy</p>
+                <p>Status</p>
+            </div>
+            <div>
+                <h4>Stay Up  to date</h4>
+                <input type="text" placeholder="Your Email Addres">
+                <button><img src="assets/send.png" width="18px" height="18px" alt=""></button>
+            </div>
+        </footer>
+    <!-- Footer -->
 </body>
 </html>
